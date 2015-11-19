@@ -13,14 +13,14 @@ $(document).ready(function() {
 	//Make 4X4 grid
 	//make the row
 
-	for (i = 0; i < 4; i++) {
+	for (i = 0; i < 16; i++) {
 		var $row = $('<tr>');
 		// $('div#container').append('<tr>'); gives a much larger grid. Why? See second loop.
-		$('div#container').append($row); //works
+		$('table').append($row); //works
 
 			//make the cells
 
-			for(x = 0; x < 4; x++) {
+			for(x = 0; x < 16; x++) {
 				// $('tr').append($('<td class="square">')); 
 				$($row).append($('<td class="square">'));
 			}
