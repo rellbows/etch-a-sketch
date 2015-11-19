@@ -25,14 +25,13 @@ $(document).ready(function() {
 				$($row).append($('<td class="square">'));
 			}
 	}
-
 	//Mouse hover
 	$('td.square').mouseenter(function() {
 		$(this).addClass('hover');
 	})
 
-	$('td.square').mouseleave(function() {
-		$(this).removeClass('hover');
+	$('#reset').click(function() {
+		$('td.square.hover').removeClass('hover');
 	})
 
-})
+});
