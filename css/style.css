@@ -2,38 +2,29 @@
 	width: 10px;
 	height: 10px;
 	border: 4px solid #AA3B3B;
-	border-radius: 2px;
 	background-color: #AA3B3B;
-	padding: 10px;
-	margin: 2px;
+	padding: 9px;
 	float: left;
 }
 
-/*#container {
-	border: 4px solid #AA3B3B;
-	overflow: auto;
-	display: inline-table;
-}*/
-
 table {
 	border: 4px solid #AA3B3B;
+	width: 960px;
 	overflow: auto;
 	margin: auto;
+	border-spacing: 0px;
 }
 
 .hover {
 	width: 10px;
 	height: 10px;
 	border: 4px solid #006699;
-	border-radius: 2px;
 	background-color: #006699;
-	padding: 10px;
-	margin: 2px;
+	padding: 9px;
 	float: left;
 }
 
 button {
 	display: block;
 	margin: auto;
-
 }
