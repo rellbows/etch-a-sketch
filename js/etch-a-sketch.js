@@ -2,9 +2,6 @@ $(document).ready(function() {
 
 	initial = true;
 
-	//Make 16X16 grid
-	//make the row
-
 
 	if (initial) {
 	for (var i = 0; i < 16; i++) {
@@ -20,6 +17,8 @@ $(document).ready(function() {
 	}
 	initial = false;
 	}
+
+	resize();
 
 	mouseHover();
 
@@ -52,6 +51,18 @@ function shake() {
 			$('tbody').append($row);
 		}
 
+		resize();
+
 		mouseHover();		
 	})
+};
+
+function resize() {
+	var totalCellAmt = $('td').length;
+	var subCellAmt = Math.sqrt(totalCellAmt);
+	var cellDim = 600/subCellAmt;
+	//resize width
+	$('td').outerWidth(cellDim);
+	//resize height
+	$('td').outerHeight(cellDim);
 };
